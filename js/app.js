@@ -45,10 +45,12 @@ if (Question1 && Question2 && Question3 && Question4 && Question5) {
     userScore += 60;
 }
 
+var randomNumber = Math.random() * 100;
+console.log(randomNumber);
 var guessNumber = prompt('Enter a Number', '3');
-if (guessNumber < 15) {
+if (guessNumber < randomNumber) {
         alert("Too Low");
-} else if (guessNumber > 15) {
+} else if (guessNumber > randomNumber) {
         alert("Too High");
  } else {
     alert("Perfect you figure it out ^_^");
