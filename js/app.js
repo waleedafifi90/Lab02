@@ -61,6 +61,12 @@ var Question7 = prompt('Guss a number', '3');
 var n = false;
 var userAttemp = 0;
 
+for(var i = 0; i < gussesNumberArray.length; i++) {
+    if( Question7 == gussesNumberArray[i]) {
+        n = true;
+    }
+}
+
 // for(var i = 0; i < gussesNumberArray.length; i++) {
 //     if( Question7 == gussesNumberArray[i]) {
 //         n = true;
