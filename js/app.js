@@ -1,5 +1,7 @@
 'use-strict';
 
+var userScore = 0;
+
 var userName = prompt('Please tell us your name ^_^', 'Waleed');
 // console.log('The user name is', userName);
 alert('The user name is ' + userName);
@@ -39,4 +41,52 @@ while( Question5 !== 'y' && Question5 !== 'yes' && Question5 !== 'n' && Question
 }
 alert('Your answer question 5 ' + Question5);
 
-alert(userName + '\nThank for your kind and help us with survey \nYour coupon code is FGremm32 \n Have a nice day');
+if (Question1 && Question2 && Question3 && Question4 && Question5) {
+    userScore += 60;
+}
+
+var guessNumber = prompt('Enter a Number', '3');
+if (guessNumber < 15) {
+        alert("Too Low");
+} else if (guessNumber > 15) {
+        alert("Too High");
+ } else {
+    alert("Perfect you figure it out ^_^");
+    userScore += 10;
+}
+
+
+var gussesNumberArray = ['15', '20', '33', '4'];
+var Question7 = prompt('Guss a number', '3');
+var n = false;
+var userAttemp = 0;
+
+// for(var i = 0; i < gussesNumberArray.length; i++) {
+//     if( Question7 == gussesNumberArray[i]) {
+//         n = true;
+//         alert("Perfect you figure it out ^_^");
+//     }
+// }
+
+
+// var n = gussesNumberArray.includes(Question7);
+// console.log(n);
+
+if (!n) {
+    while( !n && userAttemp < 6 ) {
+        Question7 = prompt('Guss a number', '3');
+        for(var i = 0; i < gussesNumberArray.length; i++) {
+            if( Question7 == gussesNumberArray[i]) {
+                n = true;
+            }
+        }
+        userAttemp++;
+        console.log(userAttemp);
+    }
+ } else {
+    alert("Perfect you figure it out ^_^");
+    userScore += 10;
+}
+if (!n) { alert('Correct answer would be 15, 20, 33, 4'); } else { userScore += 10; }
+
+alert(userName + '\nThank for your kind and help us with survey \nYour coupon code is FGremm32 \n Your final score is '+ userScore +' \n Have a nice day');
