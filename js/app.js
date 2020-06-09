@@ -45,7 +45,7 @@ if (Question1 && Question2 && Question3 && Question4 && Question5) {
     userScore += 60;
 }
 
-var randomNumber = Math.random() * 100;
+var randomNumber = Math.round(Math.random() * 100);
 console.log(randomNumber);
 var guessNumber = prompt('Enter a Number', '3');
 if (guessNumber < randomNumber) {
