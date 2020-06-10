@@ -46,12 +46,22 @@ if (Question1 && Question2 && Question3 && Question4 && Question5) {
 }
 
 var randomNumber = Math.round(Math.random() * 100);
+var guessesAttempts = 0;
 console.log(randomNumber);
 var guessNumber = prompt('Enter a Number', '3');
+
 if (guessNumber < randomNumber) {
+    while( guessNumber < randomNumber && guessNumber < 4) {
+        guessNumber = prompt('Enter a Number', '3');
         alert("Too Low");
+        guessesAttempts++;
+    }
 } else if (guessNumber > randomNumber) {
+    while( guessNumber > randomNumber && guessNumber < 4) {
+        guessNumber = prompt('Enter a Number', '3');
         alert("Too High");
+        guessesAttempts++;
+    }
  } else {
     alert("Perfect you figure it out ^_^");
     userScore += 10;
