@@ -110,3 +110,8 @@ if (!n) { alert('Correct answer would be 15, 20, 33, 4'); } else { userScore += 
 
 console.log('User score is', userScore);
 alert(userName + '\nThank for your kind and help us with survey \nYour coupon code is FGremm32 \n Your final score is '+ userScore +' \n Have a nice day');
+ function typeYouName (anything){
+     alert(anything)
+     
+ }
+ typeYouName('rania');
