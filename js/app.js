@@ -6,22 +6,22 @@ var userName = prompt('Please tell us your name ^_^', 'Waleed');
 // console.log('The user name is', userName);
 alert('Welcome ' + userName);
 
-var Question1 = prompt('Do you like to see site owner in person? y/yes ','y').toLowerCase();
+var Question1 = prompt('Do you think I have a big heart? y/yes ','y').toLowerCase();
 // console.log('The user has answer question 1', Question1);
 while( Question1 != 'y' && Question1 != 'yes' && Question1 != 'n' && Question1 != 'no') {
-    Question1 = prompt('Do you like to see site owner in person? y/yes ','y').toLowerCase();
+    Question1 = prompt('Do you think I have a big heart? y/yes ','y').toLowerCase();
 }
 if ( Question1 === 'y' || Question1 === 'yes' ) {
-    alert('Thank you me neither I would like to see you too in-person');
+    alert('I truly have a big heart, I don\'t hate anyone');
 } else {
-    alert('Me too I don\'t want to see you at all -_- ');
+    alert('Why do you think that -_- ');
 }
 userScore += 10;
 
-var Question2 = prompt('Do you think that am a Cat person? y/yes','y').toLowerCase();
+var Question2 = prompt('Do you think that I am a Cat person? y/yes','y').toLowerCase();
 // console.log('The user has answer question 2', Question2);
 while( Question2 !== 'y' && Question2 !== 'yes' && Question2 !== 'n' && Question2 !== 'no') {
-    Question2 = prompt('Do you think that am a Cat person? y/yes','y').toLowerCase();
+    Question2 = prompt('Do you think that I am a Cat person? y/yes','y').toLowerCase();
 }
 userScore += 10;
 
@@ -56,10 +56,10 @@ if ( Question4 === 'y' || Question4 === 'yes' ) {
 }
 userScore += 10;
 
-var Question5 = prompt('Do you need to know what plant I love the most? y/yes','y').toLowerCase();
+var Question5 = prompt('Do you think I love gardening? y/yes','y').toLowerCase();
 // console.log('The user has answer question 5', Question5);
 while( Question5 !== 'y' && Question5 !== 'yes' && Question5 !== 'n' && Question5 !== 'no' ) {
-    Question5 = prompt('Do you need to know what plant I love the most? y/yes','y').toLowerCase();
+    Question5 = prompt('Do you think I love gardening? y/yes','y').toLowerCase();
 }
 if ( Question5 === 'y' || Question5 === 'yes' ) {
     alert('I really love Cactus, I owned more than 30 types of it');
